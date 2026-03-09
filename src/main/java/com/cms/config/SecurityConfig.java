@@ -41,6 +41,7 @@ public class SecurityConfig {
                 // ← Public endpoints — no login needed
                 .requestMatchers("/api/auth/**").permitAll()
                 // ← All other endpoints just need valid login
+                .requestMatchers("/health").permitAll()
                 .anyRequest().authenticated()
             )
             .addFilterBefore(jwtAuthFilter,
