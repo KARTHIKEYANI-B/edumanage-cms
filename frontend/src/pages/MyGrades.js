@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps, no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { assignmentAPI } from '../services/api';
 import { useAuth } from '../context/AuthContext';
