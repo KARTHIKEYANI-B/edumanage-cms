@@ -55,8 +55,8 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOrigins(List.of(
     "http://localhost:3000",
-    "https://your-app.vercel.app",  // ← we update this after Vercel deploy
-    "https://*.vercel.app"
+    "https://edumanage-cms-git-main-karthikeyani-bs-projects.vercel.app",
+    "https://edumanage-cms.vercel.app"
 ));
         config.setAllowedMethods(
             List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
